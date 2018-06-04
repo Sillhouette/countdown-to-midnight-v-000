@@ -13,5 +13,10 @@ end
 # #countdown_with_sleep counts down from the input until 0 with one second between each number then returns "HAPPY NEW YEAR!"
 ##
 def countdown_with_sleep(number)
-  sleep(5);
+  while (number > 0) do
+    puts "#{number} SECONDS!";
+    sleep(1);
+    number -= 1;
+  end
+  "HAPPY NEW YEAR!";
 end
